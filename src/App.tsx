@@ -7,6 +7,7 @@ import { BroadcastPage } from "@/pages/BroadcastPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { PatientsPage } from "@/pages/PatientsPage";
 import { ScheduleBroadcastPage } from "@/pages/ScheduleBroadcastPage";
+import { TermsPageDash } from "@/pages/TermsPageDash";
 import { SettingsPage } from "@/pages/SettingsPage";
 import { ProfilePage } from "@/pages/ProfilePage";
 
@@ -28,6 +29,7 @@ export default function App() {
              <Route path="/schedule" element={<ScheduleBroadcastPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/termsinfo" element={<TermsPageDash />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Route>
