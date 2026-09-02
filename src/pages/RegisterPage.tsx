@@ -131,7 +131,7 @@ export function RegisterPage() {
     try {
       // Registrasi user ke Supabase Auth dengan metadata
       // Database Trigger akan otomatis membuat entri di user_clinics
-      const { data, error } = await supabase.auth.signUp({
+      const {error } = await supabase.auth.signUp({
         email: formData.email,
         password: formData.password,
         options: {

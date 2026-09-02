@@ -25,7 +25,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Search, UserPlus, Edit, Trash2, CheckCircle, XCircle, AlertCircle, Users, Upload, Download, FileSpreadsheet, Loader2 } from "lucide-react";
+import { Search, UserPlus, Edit, Trash2, CheckCircle, XCircle, AlertCircle, Users, Download, FileSpreadsheet, Loader2 } from "lucide-react";
 import { supabase } from "@/lib/supabaseClient";
 import * as XLSX from "xlsx";
 
