@@ -1,4 +1,3 @@
-// src/hooks/useAuth.ts
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -15,7 +14,6 @@ export function useAuth() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Cek status login saat komponen mount
     const loggedIn = localStorage.getItem("isLoggedIn") === "true";
     const userData = localStorage.getItem("user");
     
@@ -26,29 +24,23 @@ export function useAuth() {
     setIsLoading(false);
   }, []);
 
-  const login = (email: string, password: string, userData: User) => {
-    // Simpan ke localStorage
+  const login = (_email: string, _password: string, userData: User) => {
     localStorage.setItem("isLoggedIn", "true");
     localStorage.setItem("user", JSON.stringify(userData));
     
-    // Update state
     setIsAuthenticated(true);
     setUser(userData);
     
-    // Redirect ke dashboard
     navigate("/", { replace: true });
   };
 
   const logout = () => {
-    // Hapus dari localStorage
     localStorage.removeItem("isLoggedIn");
     localStorage.removeItem("user");
     
-    // Update state
     setIsAuthenticated(false);
     setUser(null);
     
-    // Redirect ke login
     navigate("/login", { replace: true });
   };
 
