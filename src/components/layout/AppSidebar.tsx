@@ -7,6 +7,7 @@ import {
   Settings,
   Heart,
   Users,
+  BookOpen,
   Clock,
   FileText
 } from "lucide-react";
@@ -24,6 +25,7 @@ const navItems: {
   { to: "/broadcast", label: "Pesan Siaran", icon: Send },
   { to: "/schedule", label: "Penjadwalan", icon: Clock },
   { to: "/termsinfo", label: "Syarat & Ketentuan", icon: FileText },
+  { to: "/docs", label: "Dokumentasi", icon: BookOpen }, 
   { to: "/settings", label: "Pengaturan", icon: Settings },
 ];
 

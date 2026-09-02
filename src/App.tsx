@@ -9,6 +9,7 @@ import { PatientsPage } from "@/pages/PatientsPage";
 import { ScheduleBroadcastPage } from "@/pages/ScheduleBroadcastPage";
 import { TermsPageDash } from "@/pages/TermsPageDash";
 import { SettingsPage } from "@/pages/SettingsPage";
+import { DocsPage } from "@/pages/DocsPage";
 import { ProfilePage } from "@/pages/ProfilePage";
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/termsinfo" element={<TermsPageDash />} />
+            <Route path="/docs" element={<DocsPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Route>
