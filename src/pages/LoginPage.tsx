@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Mail, Lock, LogIn, Eye, EyeOff, UserPlus } from "lucide-react";
+import { Mail, Lock, LogIn, Eye, EyeOff} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -181,7 +181,7 @@ export function LoginPage() {
               </Button>
               
               {/* Link ke halaman registrasi */}
-              <div className="text-center text-sm text-muted-foreground">
+              {/* <div className="text-center text-sm text-muted-foreground">
                 Belum punya akun?{" "}
                 <button
                   type="button"
@@ -191,7 +191,7 @@ export function LoginPage() {
                   <UserPlus className="h-3 w-3" />
                   Daftar di sini
                 </button>
-              </div>
+              </div> */}
             </CardFooter>
           </form>
         </Card>
