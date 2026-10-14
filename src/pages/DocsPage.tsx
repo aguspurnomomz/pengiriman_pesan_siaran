@@ -209,20 +209,21 @@ export function DocsPage() {
                   <MessageSquare className="h-5 w-5" /> Modul Kotak Masuk (Inbox)
                 </CardTitle>
                 <CardDescription>
-                  Pantau balasan pasien dan membalas chat secara real time
+                  Pantau balasan chat secara real time
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4 text-sm text-muted-foreground leading-relaxed">
                 <p className="text-xs">
-                  Setiap pesan balasan dari Whatsapp pasien akan otomatis tertangkap di panel sebelah kiri secara <em>real time</em>.
+                  Setiap pesan balasan dari Whatsapp akan otomatis tertangkap di panel kotak masuk secara <em>real time</em>.
                 </p>
 
                 <div className="space-y-2">
                   <h4 className="font-semibold text-foreground text-xs">Cara Membalas Pesan:</h4>
                   <ol className="list-decimal pl-5 space-y-1.5 text-xs">
-                    <li>Klik salah satu kontak pasien di daftar percakapan sebelah kiri.</li>
-                    <li>Riwayat chat (termasuk pesan keluar dari klinik) akan tampil di panel sebelah kanan.</li>
-                    <li>Ketik balasan pada form di bagian bawah lalu tekan <strong>Kirim</strong>, pesan akan terkirim langsung ke WhatsApp pasien.</li>
+                    <li>Untuk menjaga keamanan kami tidak menyediakan layanan balas pesan manual pada platform kami.</li>
+                    <li>Kami hanya menangkap riwayat pesan chat yang tertangkap dari device pengiriman saja.</li>
+                    {/* <li>Riwayat chat (termasuk pesan keluar dari klinik) akan tampil di panel sebelah kanan.</li>
+                    <li>Ketik balasan pada form di bagian bawah lalu tekan <strong>Kirim</strong>, pesan akan terkirim langsung ke WhatsApp pasien.</li> */}
                   </ol>
                 </div>
               </CardContent>
