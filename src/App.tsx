@@ -11,6 +11,7 @@ import { TermsPageDash } from "@/pages/TermsPageDash";
 import { SettingsPage } from "@/pages/SettingsPage";
 import { DocsPage } from "@/pages/DocsPage";
 import { ProfilePage } from "@/pages/ProfilePage";
+import { InboxPage } from "@/pages/InboxPage";
 
 export default function App() {
   return (
@@ -26,8 +27,9 @@ export default function App() {
             <Route path="/" element={<DashboardPage />} />
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/patients" element={<PatientsPage />} />
+            <Route path="/inbox" element={<InboxPage />} /> 
             <Route path="/broadcast" element={<BroadcastPage />} />
-             <Route path="/schedule" element={<ScheduleBroadcastPage />} />
+            <Route path="/schedule" element={<ScheduleBroadcastPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/termsinfo" element={<TermsPageDash />} />

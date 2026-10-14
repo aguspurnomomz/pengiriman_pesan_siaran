@@ -9,6 +9,7 @@ import {
   Users,
   BookOpen,
   Clock,
+  Inbox,
   FileText
 } from "lucide-react";
 import { supabase } from "@/lib/supabaseClient";
@@ -22,6 +23,7 @@ const navItems: {
 }[] = [
   { to: "/", label: "Beranda", icon: LayoutDashboard, end: true },
   { to: "/patients", label: "Data Kontak ", icon: Users },
+  { to: "/inbox", label: "Kotak Masuk", icon: Inbox },
   { to: "/broadcast", label: "Pesan Siaran", icon: Send },
   { to: "/schedule", label: "Penjadwalan", icon: Clock },
   { to: "/termsinfo", label: "Syarat & Ketentuan", icon: FileText },
